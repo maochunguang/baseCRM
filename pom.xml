@@ -513,7 +513,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>FHM</finalName>
+		<finalName>PAY</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

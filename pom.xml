@@ -278,9 +278,7 @@
 		<dependency>
 			<groupId>axis-ant</groupId>
 			<artifactId>axis-ant</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/axis-ant.jar</systemPath>
+			<version>1.4.x</version>
 		</dependency>
 		<!-- fcexporter -->
 		<dependency>
@@ -326,17 +324,13 @@
 		<dependency>
 			<groupId>jsonlib</groupId>
 			<artifactId>jsonlib</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/json-lib-2.4-jdk15.jar</systemPath>
+			<version>2.4</version>
 		</dependency>
 		<!-- jackjson-all-1.7.6 -->
 		<dependency>
 			<groupId>jackson</groupId>
 			<artifactId>jackson</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/jackson-all-1.7.6.jar</systemPath>
+			<version>1.7.6</version>
 		</dependency>
 		<!-- jpush-java-libraryV2 -->
 		<dependency>
@@ -348,91 +342,69 @@
 		</dependency>
 		<!-- mail -->
 		<dependency>
-			<groupId>mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/mail.jar</systemPath>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.5.5</version>
 		</dependency>
 		<!--mybatis-ehcache-1.0.3 -->
 		<dependency>
-			<groupId>mybatis-ehcache</groupId>
+			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-ehcache</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/mybatis-ehcache-1.0.3.jar</systemPath>
+			<version>1.0.0</version>
 		</dependency>
 		<!-- mybatis-oscache-1.0 -->
 		<dependency>
 			<groupId>mybatis-oscache</groupId>
 			<artifactId>mybatis-oscache</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/mybatis-oscache-1.0.1.jar</systemPath>
+			<version>1.0.1</version>
 		</dependency>
 		<!-- ojdbc6 -->
 		<dependency>
-			<groupId>ojdbc6</groupId>
+			<groupId>oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ojdbc6.jar</systemPath>
+			<version>11.2.0.3</version>
 		</dependency>
 		<!-- pinyin4j-2.5.0 -->
 		<dependency>
-			<groupId>pinyin4j</groupId>
+			<groupId>com.belerweb</groupId>
 			<artifactId>pinyin4j</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/pinyin4j-2.5.0.jar</systemPath>
+			<version>2.5.0</version>
 		</dependency>
 		<!-- poi-3.11-20141221 -->
 		<dependency>
 			<groupId>poi</groupId>
 			<artifactId>poi	</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/poi-3.11-20141221.jar</systemPath>
+			<version>3.11</version>
 		</dependency>
 		<!-- poi-examples-3.11-20141221 -->
 		<dependency>
 			<groupId>poi-examples</groupId>
 			<artifactId>poi-examples</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/poi-examples-3.11-20141221.jar</systemPath>
+			<version>3.11</version>
 		</dependency>
 		<!--poi-excelant-3.11-20141221 -->
 		<dependency>
 			<groupId>poi-excelant</groupId>
 			<artifactId>poi-excelant</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/poi-excelant-3.11-20141221.jar</systemPath>
+			<version>3.11</version>
 		</dependency>
 		<!--poi-ooxml-3.11-20141221 -->
 		<dependency>
 			<groupId>poi-ooxml</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/poi-ooxml-3.11-20141221.jar</systemPath>
+			<version>3.11</version>
 		</dependency>
 		<!-- poi-ooxml-schemas-3.11-20141221 -->
 		<dependency>
 			<groupId>poi-ooxml-schemas</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/poi-ooxml-schemas-3.11-20141221.jar</systemPath>
+			<version>3.11</version>
 		</dependency>
 		<!-- poi-scratchpad-3.11-20141221 -->
 		<dependency>
 			<groupId>poi-scratchpad</groupId>
 			<artifactId>poi-scratchpad</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/poi-scratchpad-3.11-20141221.jar</systemPath>
+			<version>3.11</version>
 		</dependency>
 		<!--QRCode -->
 		<dependency>
@@ -444,19 +416,15 @@
 		</dependency>
 		<!-- saaj -->
 		<dependency>
-			<groupId>saaj</groupId>
-			<artifactId>saaj</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/saaj.jar</systemPath>
+			<groupId>javax.xml.soap</groupId>
+			<artifactId>saaj-api</artifactId>
+			<version>1.3</version>
 		</dependency>
 		<!-- shiro-all -->
 		<dependency>
-			<groupId>shiro</groupId>
-			<artifactId>shiro</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/shiro-all-1.2.3.jar</systemPath>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-all</artifactId>
+			<version>1.2.3</version>
 		</dependency>
 		<!-- sun.misc.BASE64Decoder -->
 		<dependency>
@@ -465,14 +433,6 @@
 			<version>1.0</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/sun.misc.BASE64Decoder.jar</systemPath>
-		</dependency>
-		<!-- ueditor -->
-		<dependency>
-			<groupId>ueditor</groupId>
-			<artifactId>ueditor</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ueditor.jar</systemPath>
 		</dependency>
 		<!-- java_websocket -->
 		<dependency>

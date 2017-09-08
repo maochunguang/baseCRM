@@ -2,197 +2,191 @@ package com.koowo.entity.paycenter;
 
 import java.util.Date;
 
-/**
- * BadAccount entity. @author MyEclipse Persistence Tools
- */
-
 public class BadAccount implements java.io.Serializable {
 
-	// Fields
+    private Integer id;
+    private String userName;
+    private String regTime;
+    private String oldPasswords;
+    private String idCode;
+    private String psubas;
+    private String payRecords;
+    private String contact;
+    private Integer authState;
+    private Integer clearIdcode;
+    private Integer resetPassword;
+    private Integer dealState;
+    private Date inputTime;
+    private String stopauthReason;
+    private String inputPerson;
+    private String disposePerson;
+    private Date disposeTime;
+    // Constructors
 
-	private Integer id;
-	private String userName;
-	private String regTime;
-	private String oldPasswords;
-	private String idCode;
-	private String psubas;
-	private String payRecords;
-	private String contact;
-	private Integer authState;
-	private Integer clearIdcode;
-	private Integer resetPassword;
-	private Integer dealState;
-	private Date inputTime;
-	private String stopauthReason;
-	private String inputPerson;
-	private String disposePerson;
-	private Date disposeTime; 
-	// Constructors
+    public String getInputPerson() {
+        return inputPerson;
+    }
 
-	public String getInputPerson() {
-		return inputPerson;
-	}
+    public void setInputPerson(String inputPerson) {
+        this.inputPerson = inputPerson;
+    }
 
-	public void setInputPerson(String inputPerson) {
-		this.inputPerson = inputPerson;
-	}
+    public String getStopauthReason() {
+        return stopauthReason;
+    }
 
-	public String getStopauthReason() {
-		return stopauthReason;
-	}
+    public void setStopauthReason(String stopauthReason) {
+        this.stopauthReason = stopauthReason;
+    }
 
-	public void setStopauthReason(String stopauthReason) {
-		this.stopauthReason = stopauthReason;
-	}
+    public Date getInputTime() {
+        return inputTime;
+    }
 
-	public Date getInputTime() {
-		return inputTime;
-	}
+    public void setInputTime(Date inputTime) {
+        this.inputTime = inputTime;
+    }
 
-	public void setInputTime(Date inputTime) {
-		this.inputTime = inputTime;
-	}
+    /**
+     * minimal constructor
+     */
+    public BadAccount(String userName) {
+        this.userName = userName;
+    }
 
-	/** default constructor */
-	public BadAccount() {
-	}
+    /**
+     * full constructor
+     */
+    public BadAccount(String userName, String regTime, String oldPasswords,
+                      String idCode, String psubas, String payRecords, String contact,
+                      Integer authState, Integer clearIdcode, Integer resetPassword,
+                      Integer dealState, Date inputTime) {
+        this.userName = userName;
+        this.regTime = regTime;
+        this.oldPasswords = oldPasswords;
+        this.idCode = idCode;
+        this.psubas = psubas;
+        this.payRecords = payRecords;
+        this.contact = contact;
+        this.authState = authState;
+        this.clearIdcode = clearIdcode;
+        this.resetPassword = resetPassword;
+        this.dealState = dealState;
+        this.inputTime = inputTime;
+    }
 
-	/** minimal constructor */
-	public BadAccount(String userName) {
-		this.userName = userName;
-	}
+    // Property accessors
 
-	/** full constructor */
-	public BadAccount(String userName, String regTime, String oldPasswords,
-			String idCode, String psubas, String payRecords, String contact,
-			Integer authState, Integer clearIdcode, Integer resetPassword,
-			Integer dealState, Date inputTime) {
-		this.userName = userName;
-		this.regTime = regTime;
-		this.oldPasswords = oldPasswords;
-		this.idCode = idCode;
-		this.psubas = psubas;
-		this.payRecords = payRecords;
-		this.contact = contact;
-		this.authState = authState;
-		this.clearIdcode = clearIdcode;
-		this.resetPassword = resetPassword;
-		this.dealState = dealState;
-		this.inputTime = inputTime;
-	}
+    public Integer getId() {
+        return this.id;
+    }
 
-	// Property accessors
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public Integer getId() {
-		return this.id;
-	}
+    public String getUserName() {
+        return this.userName;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-	public String getUserName() {
-		return this.userName;
-	}
+    public String getRegTime() {
+        return this.regTime;
+    }
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+    public void setRegTime(String regTime) {
+        this.regTime = regTime;
+    }
 
-	public String getRegTime() {
-		return this.regTime;
-	}
+    public String getOldPasswords() {
+        return this.oldPasswords;
+    }
 
-	public void setRegTime(String regTime) {
-		this.regTime = regTime;
-	}
+    public void setOldPasswords(String oldPasswords) {
+        this.oldPasswords = oldPasswords;
+    }
 
-	public String getOldPasswords() {
-		return this.oldPasswords;
-	}
+    public String getIdCode() {
+        return this.idCode;
+    }
 
-	public void setOldPasswords(String oldPasswords) {
-		this.oldPasswords = oldPasswords;
-	}
+    public void setIdCode(String idCode) {
+        this.idCode = idCode;
+    }
 
-	public String getIdCode() {
-		return this.idCode;
-	}
+    public String getPsubas() {
+        return this.psubas;
+    }
 
-	public void setIdCode(String idCode) {
-		this.idCode = idCode;
-	}
+    public void setPsubas(String psubas) {
+        this.psubas = psubas;
+    }
 
-	public String getPsubas() {
-		return this.psubas;
-	}
+    public String getPayRecords() {
+        return this.payRecords;
+    }
 
-	public void setPsubas(String psubas) {
-		this.psubas = psubas;
-	}
+    public void setPayRecords(String payRecords) {
+        this.payRecords = payRecords;
+    }
 
-	public String getPayRecords() {
-		return this.payRecords;
-	}
+    public String getContact() {
+        return this.contact;
+    }
 
-	public void setPayRecords(String payRecords) {
-		this.payRecords = payRecords;
-	}
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
 
-	public String getContact() {
-		return this.contact;
-	}
+    public Integer getAuthState() {
+        return this.authState;
+    }
 
-	public void setContact(String contact) {
-		this.contact = contact;
-	}
+    public void setAuthState(Integer authState) {
+        this.authState = authState;
+    }
 
-	public Integer getAuthState() {
-		return this.authState;
-	}
+    public Integer getClearIdcode() {
+        return this.clearIdcode;
+    }
 
-	public void setAuthState(Integer authState) {
-		this.authState = authState;
-	}
+    public void setClearIdcode(Integer clearIdcode) {
+        this.clearIdcode = clearIdcode;
+    }
 
-	public Integer getClearIdcode() {
-		return this.clearIdcode;
-	}
+    public Integer getResetPassword() {
+        return this.resetPassword;
+    }
 
-	public void setClearIdcode(Integer clearIdcode) {
-		this.clearIdcode = clearIdcode;
-	}
+    public void setResetPassword(Integer resetPassword) {
+        this.resetPassword = resetPassword;
+    }
 
-	public Integer getResetPassword() {
-		return this.resetPassword;
-	}
+    public Integer getDealState() {
+        return this.dealState;
+    }
 
-	public void setResetPassword(Integer resetPassword) {
-		this.resetPassword = resetPassword;
-	}
+    public void setDealState(Integer dealState) {
+        this.dealState = dealState;
+    }
 
-	public Integer getDealState() {
-		return this.dealState;
-	}
+    public String getDisposePerson() {
+        return disposePerson;
+    }
 
-	public void setDealState(Integer dealState) {
-		this.dealState = dealState;
-	}
+    public void setDisposePerson(String disposePerson) {
+        this.disposePerson = disposePerson;
+    }
 
-	public String getDisposePerson() {
-		return disposePerson;
-	}
+    public Date getDisposeTime() {
+        return disposeTime;
+    }
 
-	public void setDisposePerson(String disposePerson) {
-		this.disposePerson = disposePerson;
-	}
-
-	public Date getDisposeTime() {
-		return disposeTime;
-	}
-
-	public void setDisposeTime(Date disposeTime) {
-		this.disposeTime = disposeTime;
-	}
+    public void setDisposeTime(Date disposeTime) {
+        this.disposeTime = disposeTime;
+    }
 
 }

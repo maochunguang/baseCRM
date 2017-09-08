@@ -3,8 +3,8 @@ package com.koowo.entity.paycenter;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ActPost implements Serializable {
-	private Long id;
+public class ActPost {
+    private Long id;
 	private Integer actType;//活动类型1指首页公告，2,3,4,5等分别指各个充值渠道的公告
 	private Integer actFlag;//是否显示
 	private String actName;
@@ -14,11 +14,8 @@ public class ActPost implements Serializable {
 	private String comments;
 	private Integer actGenres;
 	private Integer actRatio;
-	
-	public ActPost(){
-		
-	}
-	public Integer getActFlag() {
+
+    public Integer getActFlag() {
 		return actFlag;
 	}
 	public void setActFlag(Integer actFlag) {

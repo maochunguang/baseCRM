@@ -30,8 +30,8 @@ public class DaoSupport implements DAO {
 	/**
 	 * 批量更新
 	 * @param str
-	 * @param obj
-	 * @return
+     * @param objs
+     * @return
 	 * @throws Exception
 	 */
 	public Object batchSave(String str, List objs )throws Exception{
@@ -52,8 +52,8 @@ public class DaoSupport implements DAO {
 	/**
 	 * 批量更新
 	 * @param str
-	 * @param obj
-	 * @return
+     * @param objs
+     * @return
 	 * @throws Exception
 	 */
 	public void batchUpdate(String str, List objs )throws Exception{
@@ -77,8 +77,8 @@ public class DaoSupport implements DAO {
 	/**
 	 * 批量更新
 	 * @param str
-	 * @param obj
-	 * @return
+     * @param objs
+     * @return
 	 * @throws Exception
 	 */
 	public Object batchDelete(String str, List objs )throws Exception{

@@ -30,6 +30,29 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: axis-ant:axis-ant:1.4.x" level="project" />
+    <orderEntry type="library" name="Maven: jsonlib:jsonlib:2.4" level="project" />
+    <orderEntry type="library" name="Maven: jackson:jackson:1.7.6" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:javax.mail-api:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-ehcache:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: mybatis-oscache:mybatis-oscache:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: oracle:ojdbc6:11.2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.belerweb:pinyin4j:2.5.0" level="project" />
+    <orderEntry type="library" name="Maven: poi:poi:3.11" level="project" />
+    <orderEntry type="library" name="Maven: poi-examples:poi-examples:3.11" level="project" />
+    <orderEntry type="library" name="Maven: poi-excelant:poi-excelant:3.11" level="project" />
+    <orderEntry type="library" name="Maven: poi-ooxml:poi-ooxml:3.11" level="project" />
+    <orderEntry type="library" name="Maven: poi-ooxml-schemas:poi-ooxml-schemas:3.11" level="project" />
+    <orderEntry type="library" name="Maven: poi-scratchpad:poi-scratchpad:3.11" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.soap:saaj-api:1.3" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-all:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-guice:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:r09" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-multibindings:3.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.0.4.RELEASE" level="project" />

@@ -320,18 +320,39 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/fctl.jar</systemPath>
 		</dependency>
-		<!-- json-lib-2.4-jdk15.jar -->
+        <!-- json-lib-->
 		<dependency>
-			<groupId>jsonlib</groupId>
-			<artifactId>jsonlib</artifactId>
-			<version>2.4</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.7</version>
 		</dependency>
+
 		<!-- jackjson-all-1.7.6 -->
 		<dependency>
-			<groupId>jackson</groupId>
-			<artifactId>jackson</artifactId>
-			<version>1.7.6</version>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.9.7</version>
 		</dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-lgpl</artifactId>
+            <version>1.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-lgpl</artifactId>
+            <version>1.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.7</version>
+        </dependency>
 		<!-- jpush-java-libraryV2 -->
 		<dependency>
 			<groupId>jpush</groupId>
@@ -372,37 +393,38 @@
 		</dependency>
 		<!-- poi-3.11-20141221 -->
 		<dependency>
-			<groupId>poi</groupId>
+            <groupId>org.apache.poi</groupId>
 			<artifactId>poi	</artifactId>
 			<version>3.11</version>
 		</dependency>
 		<!-- poi-examples-3.11-20141221 -->
 		<dependency>
-			<groupId>poi-examples</groupId>
+            <groupId>org.apache.poi</groupId>
 			<artifactId>poi-examples</artifactId>
 			<version>3.11</version>
 		</dependency>
 		<!--poi-excelant-3.11-20141221 -->
 		<dependency>
-			<groupId>poi-excelant</groupId>
+            <groupId>org.apache.poi</groupId>
 			<artifactId>poi-excelant</artifactId>
 			<version>3.11</version>
 		</dependency>
 		<!--poi-ooxml-3.11-20141221 -->
 		<dependency>
-			<groupId>poi-ooxml</groupId>
+            <groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.11</version>
 		</dependency>
+
 		<!-- poi-ooxml-schemas-3.11-20141221 -->
 		<dependency>
-			<groupId>poi-ooxml-schemas</groupId>
+            <groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>3.11</version>
 		</dependency>
 		<!-- poi-scratchpad-3.11-20141221 -->
 		<dependency>
-			<groupId>poi-scratchpad</groupId>
+            <groupId>org.apache.poi</groupId>
 			<artifactId>poi-scratchpad</artifactId>
 			<version>3.11</version>
 		</dependency>
@@ -469,6 +491,11 @@
 			<artifactId>junit</artifactId>
 			<version>4.9</version>
 			<scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.5.6</version>
 		</dependency>
 
 	</dependencies>

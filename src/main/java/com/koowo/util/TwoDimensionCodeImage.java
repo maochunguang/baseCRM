@@ -1,8 +1,9 @@
 package com.koowo.util;
 
+import jp.sourceforge.qrcode.data.QRCodeImage;
+
 import java.awt.image.BufferedImage;
 
-import jp.sourceforge.qrcode.data.QRCodeImage;
 
 /**
  * 二维码

@@ -4,8 +4,6 @@ import java.math.BigDecimal;
 
 public class Account {
 
-    // Fields    
-
     private Long id;
     private Long userId;
     private String userName;

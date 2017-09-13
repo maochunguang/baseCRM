@@ -1,7 +1,5 @@
 package com.koowo.entity.paycenter;
 
-import com.koowo.payCenter.payadapter.kuwocard.MD5Util;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -304,9 +302,9 @@ public class KuwoCard {
 	 */
 	public static String getCardPwd(String srcCardNo) { 
 		String preSign = srcCardNo + md5Key;
-		String sign  = new MD5Util().getMD5ofStr(preSign, "UTF-8");
-		return sign;
-	}
+//		String sign  = new MD5Util().getMD5ofStr(preSign, "UTF-8");
+        return preSign;
+    }
 	
 	/**
 	 * 获取随机数字

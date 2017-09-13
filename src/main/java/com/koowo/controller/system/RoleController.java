@@ -1,15 +1,12 @@
 package com.koowo.controller.system;
 
-import java.io.PrintWriter;
-import java.math.BigInteger;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import net.sf.json.JSONArray;
-
+import com.alibaba.fastjson.JSONArray;
+import com.koowo.entity.system.Menu;
+import com.koowo.entity.system.Page;
+import com.koowo.entity.system.Role;
+import com.koowo.service.system.MenuService;
+import com.koowo.service.system.RoleService;
+import com.koowo.util.*;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -21,17 +18,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.koowo.entity.system.Menu;
-import com.koowo.entity.system.Page;
-import com.koowo.entity.system.Role;
-import com.koowo.service.system.MenuService;
-import com.koowo.service.system.RoleService;
-import com.koowo.util.AppUtil;
-import com.koowo.util.Const;
-import com.koowo.util.Jurisdiction;
-import com.koowo.util.PageData;
-import com.koowo.util.RightsHelper;
-import com.koowo.util.Tools;
+import javax.annotation.Resource;
+import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /** 
  * 类名称：RoleController
  * 创建人：FH 
@@ -270,8 +262,8 @@ public class RoleController extends BaseController {
 					}
 				}
 			}
-			JSONArray arr = JSONArray.fromObject(menuList);
-			String json = arr.toString();
+            JSONArray arr = (JSONArray) JSONArray.toJSON(menuList);
+            String json = arr.toString();
 			json = json.replaceAll("MENU_ID", "id").replaceAll("MENU_NAME", "name").replaceAll("subMenu", "nodes").replaceAll("hasMenu", "checked");
 			model.addAttribute("zTreeNodes", json);
 			model.addAttribute("roleId", ROLE_ID);
@@ -314,8 +306,8 @@ public class RoleController extends BaseController {
 					}
 				}
 			}
-			JSONArray arr = JSONArray.fromObject(menuList);
-			String json = arr.toString();
+            JSONArray arr = (JSONArray) JSONArray.toJSON(menuList);
+            String json = arr.toString();
 			//System.out.println(json);
 			json = json.replaceAll("MENU_ID", "id").replaceAll("MENU_NAME", "name").replaceAll("subMenu", "nodes").replaceAll("hasMenu", "checked");
 			mv.addObject("zTreeNodes", json);

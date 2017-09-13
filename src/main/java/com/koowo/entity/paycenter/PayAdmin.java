@@ -20,13 +20,6 @@ public class PayAdmin  implements java.io.Serializable {
      private int state;//0 :正常 1:账户停用
      private String remark;//登陆用户的真是姓名
 
-
-    // Constructors
-
-    /** default constructor */
-    public PayAdmin() {
-    }
-
 	/** minimal constructor */
     public PayAdmin(String userName, String password) {
         this.userName = userName;

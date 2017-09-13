@@ -1,21 +1,18 @@
 package com.koowo.controller.system;
 
-import java.io.PrintWriter;
-import java.util.List;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
-
-import net.sf.json.JSONArray;
-
+import com.alibaba.fastjson.JSONArray;
+import com.koowo.entity.system.Menu;
+import com.koowo.service.system.MenuService;
+import com.koowo.util.PageData;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.koowo.entity.system.Menu;
-import com.koowo.service.system.MenuService;
-import com.koowo.util.PageData;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
+import java.util.List;
 /** 
  * 类名称：MenuController
  * 创建人：FH 
@@ -31,7 +28,6 @@ public class MenuController extends BaseController {
 	
 	/**
 	 * 显示菜单列表
-	 * @param model
 	 * @return
 	 */
 	@RequestMapping
@@ -44,13 +40,11 @@ public class MenuController extends BaseController {
 		} catch(Exception e){
 			logger.error(e.toString(), e);
 		}
-		
 		return mv;
 	}
 	
 	/**
 	 * 请求新增菜单页面
-	 * @param model
 	 * @return
 	 */
 	@RequestMapping(value="/toAdd")
@@ -69,7 +63,6 @@ public class MenuController extends BaseController {
 	/**
 	 * 保存菜单信息
 	 * @param menu
-	 * @param model
 	 * @return
 	 */
 	@RequestMapping(value="/add")
@@ -201,16 +194,15 @@ public class MenuController extends BaseController {
 	
 	/**
 	 * 获取当前菜单的所有子菜单
-	 * @param menuId
 	 * @param response
 	 */
 	@RequestMapping(value="/sub")
 	public void getSub(@RequestParam String MENU_ID,HttpServletResponse response)throws Exception{
 		try {
 			List<Menu> subMenu = menuService.listSubMenuByParentId(MENU_ID);
-			JSONArray arr = JSONArray.fromObject(subMenu);
+			JSONArray arr = (JSONArray) JSONArray.toJSON(subMenu);
 			PrintWriter out;
-			
+
 			response.setCharacterEncoding("utf-8");
 			out = response.getWriter();
 			String json = arr.toString();
@@ -224,7 +216,6 @@ public class MenuController extends BaseController {
 	
 	/**
 	 * 删除菜单
-	 * @param menuId
 	 * @param out
 	 */
 	@RequestMapping(value="/del")

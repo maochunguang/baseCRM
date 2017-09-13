@@ -1,6 +1,6 @@
 package com.koowo.entity.paycenter;
 
-import org.json.simple.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
@@ -37,10 +37,6 @@ public class Renewal implements java.io.Serializable {
 	private String type;
 	private Long serviceId;
 	private String ext;
-
-	/** default constructor */
-	public Renewal() {
-	}
 
 	public JSONObject toJSON() {
 		JSONObject jo = new JSONObject();

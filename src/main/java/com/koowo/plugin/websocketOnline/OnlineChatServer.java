@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 
-import net.sf.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 
 import org.java_websocket.WebSocket;
 import org.java_websocket.WebSocketImpl;
@@ -110,9 +110,9 @@ public class OnlineChatServer extends WebSocketServer{
 	 */
 	public void goOut(WebSocket conn,String type){
 		JSONObject result = new JSONObject();
-		result.element("type", type);
-		result.element("msg", "goOut");
-		OnlineChatServerPool.sendMessageToUser(conn,result.toString());	
+        result.put("type", type);
+        result.put("msg", "goOut");
+        OnlineChatServerPool.sendMessageToUser(conn,result.toString());
 	}
 	
 	/**
@@ -125,24 +125,21 @@ public class OnlineChatServer extends WebSocketServer{
 
 	/**
 	 * 获取在线总数
-	 * @param user
-	 */
+     * @param
+     */
 	public void getUserCount(WebSocket conn){
 		JSONObject result = new JSONObject();
-		result.element("type", "count");
-		result.element("msg", OnlineChatServerPool.getUserCount());
-		OnlineChatServerPool.sendMessageToUser(conn,result.toString());					
+        result.put("type", "count");
+        result.put("msg", OnlineChatServerPool.getUserCount());
+        OnlineChatServerPool.sendMessageToUser(conn,result.toString());
 	}
-	
-	/**
-	 * 获取在线用户列表
-	 * @param user
-	 */
-	public void getUserList(WebSocket conn){
+
+
+    public void getUserList(WebSocket conn){
 		JSONObject result = new JSONObject();
-		result.element("type", "userlist");
-		result.element("list", OnlineChatServerPool.getOnlineUser());
-		OnlineChatServerPool.sendMessageToUser(conn,result.toString());					
+        result.put("type", "userlist");
+        result.put("list", OnlineChatServerPool.getOnlineUser());
+        OnlineChatServerPool.sendMessageToUser(conn,result.toString());
 	}
 	
 	public static void main( String[] args ) throws InterruptedException , IOException {

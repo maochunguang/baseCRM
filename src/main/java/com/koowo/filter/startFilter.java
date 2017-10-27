@@ -17,8 +17,8 @@ import javax.servlet.ServletResponse;
 import org.java_websocket.WebSocketImpl;
 
 import com.koowo.controller.system.BaseController;
-import com.koowo.plugin.websocketInstantMsg.ChatServer;
-import com.koowo.plugin.websocketOnline.OnlineChatServer;
+import com.koowo.plugin.websocketInstantmsg.ChatServer;
+import com.koowo.plugin.websocketonline.OnlineChatServer;
 
 /**
  * 创建人：FH 

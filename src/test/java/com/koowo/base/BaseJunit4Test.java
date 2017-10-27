@@ -1,8 +1,11 @@
 package com.koowo.base;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import java.util.TreeMap;
 
 @RunWith(SpringJUnit4ClassRunner.class)  //使用junit4进行测试
 
@@ -17,6 +20,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)  
 
 
-public class BaseJunit4Test {  
-
+public class BaseJunit4Test {
+    @Test
+    public void testTreeMap() {
+        TreeMap map = new TreeMap();
+    }
 }  

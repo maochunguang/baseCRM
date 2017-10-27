@@ -18,7 +18,6 @@ import com.koowo.util.Const;
 import com.koowo.util.MapDistance;
 import com.koowo.util.PageData;
 import com.koowo.util.PathUtil;
-import com.koowo.util.TwoDimensionCode;
 
 /** 
  * 类名称：ToolController
@@ -106,8 +105,6 @@ public class ToolController extends BaseController {
 	
 	/**
 	 *	生成二维码
-	 * @param args
-	 * @throws Exception
 	 */
 	@RequestMapping(value="/createTwoDimensionCode")
 	@ResponseBody
@@ -122,8 +119,8 @@ public class ToolController extends BaseController {
 		}else{
 			try {
 				String filePath = PathUtil.getClasspath() + Const.FILEPATHTWODIMENSIONCODE + encoderImgId;  //存放路径
-				TwoDimensionCode.encoderQRCode(encoderContent, filePath, "png");							//执行生成二维码
-			} catch (Exception e) {
+//				TwoDimensionCode.encoderQRCode(encoderContent, filePath, "png");							//执行生成二维码
+            } catch (Exception e) {
 				errInfo = "error";
 			}
 		}
@@ -134,8 +131,6 @@ public class ToolController extends BaseController {
 	
 	/**
 	 *	解析二维码
-	 * @param args
-	 * @throws Exception
 	 */
 	@RequestMapping(value="/readTwoDimensionCode")
 	@ResponseBody
@@ -150,8 +145,8 @@ public class ToolController extends BaseController {
 		}else{
 			try {
 				String filePath = PathUtil.getClasspath() + Const.FILEPATHTWODIMENSIONCODE + imgId;  //存放路径
-				readContent = TwoDimensionCode.decoderQRCode(filePath);//执行读取二维码
-			} catch (Exception e) {
+//				readContent = TwoDimensionCode.decoderQRCode(filePath);//执行读取二维码
+            } catch (Exception e) {
 				errInfo = "error";
 			}
 		}
@@ -202,8 +197,6 @@ public class ToolController extends BaseController {
 	
 	/**
 	 *	根据经纬度计算距离
-	 * @param args
-	 * @throws Exception
 	 */
 	@RequestMapping(value="/getDistance")
 	@ResponseBody

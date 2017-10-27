@@ -19,7 +19,7 @@
 
 /**
  * 声明baidu包
- * @author: allstar, erik, meizz, berg
+ * @author allstar, erik, meizz, berg
  */
 var T,
     baidu = T = baidu || {version: "1.5.0"};
@@ -1219,7 +1219,7 @@ baidu.sio.callByServer = /**@function*/function(url, callback, opt_options) {
  * @function
  * @grammar baidu.sio.log(url)
  * @param {string} url 要发送的地址.
- * @author: int08h,leeight
+ * @author int08h,leeight
  */
 baidu.sio.log = function(url) {
   var img = new Image(),

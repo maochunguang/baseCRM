@@ -1,5 +1,9 @@
 package com.koowo.cache;
 
+/**
+ * @author maocg
+ * @date: 2017/10/27
+ */
 public interface RedisUtil {
     /**
      * 保存

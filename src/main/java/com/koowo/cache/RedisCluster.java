@@ -3,6 +3,10 @@ package com.koowo.cache;
 import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.JedisCluster;
 
+/**
+ * @author maocg
+ * @date 2017/10/27
+ */
 public class RedisCluster implements RedisUtil {
     @Autowired
     private JedisCluster jedisCluster;

@@ -11,7 +11,7 @@ import com.koowo.entity.system.Menu;
 
 /**
  * 权限处理
- * @author:fh
+ * @authorfh
 */
 public class Jurisdiction {
 

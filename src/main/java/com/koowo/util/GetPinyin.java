@@ -8,8 +8,8 @@ import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombi
 
 /**
  * @explain:
- * 
- * @author: FH
+ *
+ * @author FH
  * 
  * @version:
  */

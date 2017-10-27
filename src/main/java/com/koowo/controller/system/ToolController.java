@@ -19,11 +19,9 @@ import com.koowo.util.MapDistance;
 import com.koowo.util.PageData;
 import com.koowo.util.PathUtil;
 
-/** 
- * 类名称：ToolController
- * 创建人：FH 
- * 创建时间：2015年4月4日
- * @version
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/tool")

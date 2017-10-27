@@ -25,11 +25,9 @@ import com.koowo.util.SmsUtil;
 import com.koowo.util.Tools;
 import com.koowo.util.mail.SimpleMailSender;
 
-/** 
- * 类名称：HeadController
- * 创建人：FH 
- * 创建时间：2014年8月16日
- * @version
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/head")

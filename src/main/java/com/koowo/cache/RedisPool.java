@@ -4,6 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+/**
+ * @author maocg
+ * @date: 2017/10/27
+ */
 public class RedisPool implements RedisUtil {
     @Autowired
     private JedisPool jedisPool;

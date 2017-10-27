@@ -1,7 +1,7 @@
 package com.koowo.constant;
 
 /**
- * @author: maocg
+ * @author maocg
  * @date: 2017/10/27
  */
 public class WebSocketConst {

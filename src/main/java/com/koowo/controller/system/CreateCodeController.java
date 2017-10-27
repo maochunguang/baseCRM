@@ -18,11 +18,9 @@ import com.koowo.util.Freemarker;
 import com.koowo.util.PageData;
 import com.koowo.util.PathUtil;
 
-/** 
- * 类名称：FreemarkerController
- * 创建人：FH 
- * 创建时间：2015年1月12日
- * @version
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/createCode")

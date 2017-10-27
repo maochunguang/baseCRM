@@ -13,11 +13,10 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import java.util.List;
-/** 
- * 类名称：MenuController
- * 创建人：FH 
- * 创建时间：2014年7月1日
- * @version
+
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/menu")

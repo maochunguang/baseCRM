@@ -3,7 +3,7 @@ package com.koowo.util;
 import org.springframework.context.ApplicationContext;
 /**
  * 项目名称：
- * @author:fh
+ * @authorfh
  * 
 */
 public class Const {

@@ -32,8 +32,10 @@ import com.koowo.util.DateUtil;
 import com.koowo.util.PageData;
 import com.koowo.util.RightsHelper;
 import com.koowo.util.Tools;
-/*
- * 总入口
+
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 public class LoginController extends BaseController {

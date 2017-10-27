@@ -23,10 +23,9 @@ import com.koowo.util.Const;
 import com.koowo.util.PageData;
 import com.koowo.util.Jurisdiction;
 
-/** 
- * 类名称：OnlineManagerController
- * 创建人：FH 
- * 创建时间：2015-05-25
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/onlinemanager")

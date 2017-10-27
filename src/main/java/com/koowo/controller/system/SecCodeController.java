@@ -22,12 +22,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.koowo.util.Const;
 
-/** 
- * 类名称：SecCodeController
- * 类描述： 
- * 作者单位： 
- * 联系方式：
- * @version
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping("/code")

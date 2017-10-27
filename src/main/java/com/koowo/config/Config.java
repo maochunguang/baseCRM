@@ -1,7 +1,8 @@
 package com.koowo.config;
 
 /**
- * Created by mao on 2017/9/29.
+ * @author maocg
+ * @date: 2017/10/27
  */
 public class Config {
 }

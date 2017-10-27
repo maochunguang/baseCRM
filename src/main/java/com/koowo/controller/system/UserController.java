@@ -44,9 +44,8 @@ import com.koowo.util.PathUtil;
 import com.koowo.util.Tools;
 
 /**
- * 类名称：UserController
- * 创建人：FH
- * 创建时间：2014年6月28日
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value = "/user")

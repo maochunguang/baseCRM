@@ -19,11 +19,10 @@ import com.koowo.service.system.DictionariesService;
 import com.koowo.service.system.MenuService;
 import com.koowo.util.AppUtil;
 import com.koowo.util.PageData;
-/** 
- * 类名称：DictionariesController
- * 创建人：FH
- * 创建时间：2014年9月2日
- * @version
+
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/dictionaries")

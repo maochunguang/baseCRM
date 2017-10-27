@@ -24,11 +24,10 @@ import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-/** 
- * 类名称：RoleController
- * 创建人：FH 
- * 创建时间：2014年6月30日
- * @version
+
+/**
+ * @author maocg
+ * @date 2017/10/27
  */
 @Controller
 @RequestMapping(value="/role")

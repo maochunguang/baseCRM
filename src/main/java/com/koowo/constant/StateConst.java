@@ -1,7 +1,8 @@
 package com.koowo.constant;
 
 /**
- * Created by mao on 2017/9/8.
+ * @author maocg
+ * @date: 2017/9/27
  */
 public class StateConst {
     public static final Integer ACCOUNT_TATE_NORMAL = new Integer("0");
